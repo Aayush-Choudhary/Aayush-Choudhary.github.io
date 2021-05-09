@@ -1,1 +1,1 @@
-https://aayush-choudhary.github.io/index.html
+aayush-choudhary.github.io/

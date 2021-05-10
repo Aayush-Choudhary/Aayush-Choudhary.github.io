@@ -1,1 +1,1 @@
-aayush-choudhary.github.io/
+www.aayush-choudhary.github.io/

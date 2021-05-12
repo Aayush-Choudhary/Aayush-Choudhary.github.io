@@ -30,6 +30,27 @@
 
     <!-- Modernizr JS File -->
     <script src="js/modernizr.custom.js"></script>
+
+    <!--Sheets-->
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/12269/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
 </head>
 
 <body class="contact">
@@ -154,7 +175,7 @@
                 </ul>
             </div>
             <div class="col-12 col-lg-8">
-                <form id="contactform" class="contactform" method="post" name="google-sheet">
+                <form id="contactform myForm" class="contactform" method="post" name="google-sheet">
                     <div class="contactform">
                         <div class="row">
                             <div class="col-12 col-md-4">
@@ -165,11 +186,11 @@
                             </div>
                             <div class="col-12">
                                 <textarea name="Phone" placeholder="YOUR MESSAGE" value="" required=""></textarea>
-                                <button type="submit" onclick="clearForm()" name="submit" value="Login" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>   
+                                <button type="submit" onclick="SubForm()" name="submit" value="Login" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>   
                             </div>
                             <div class="col-12 form-message">
                                 <span id="ppp" class="output_message text-center font-weight-600 text-uppercase"></span>
-                            </div>
+                            </div>  
                         </div>
                     </div>
                 </form>
@@ -190,7 +211,7 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/custom.js"></script>
     
-    <!--Google Sheets-->
+    <!--Google Sheets
     
 <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbzhYwI1gsSANwB-nUie9HO6K-extjzF_TlUJMzAgVaXh0y87Yk-/exec'
@@ -202,6 +223,7 @@
                 .catch(error => console.error('Error!', error.message))
             })
 </script>
+-->
 
     <!-- Delay and Clear form  
 <script>

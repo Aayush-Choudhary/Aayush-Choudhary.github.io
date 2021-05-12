@@ -1,8 +1,20 @@
 function sendMessage()
 {
     let name = document.getElementById("dev_name").value;
+    if(name === "")
+    {
+        return
+    }
     let email = document.getElementById("dev_email").value;
+    if(email === "")
+    {
+        return
+    }
     let message = document.getElementById("dev_message").value;
+    if(message === "")
+    {
+        return
+    }
     console.log(name, email, message);
     name = name.replace(' ' , "--");
     message = message.replace(' ', '--');

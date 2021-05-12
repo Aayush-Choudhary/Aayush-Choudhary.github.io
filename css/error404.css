@@ -1,0 +1,18 @@
+p{
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.errorcode {
+    color: red;
+    text-align: center;
+    font-family: 'Recursive', sans-serif;
+    font-size: 2.5rem;
+}
+  

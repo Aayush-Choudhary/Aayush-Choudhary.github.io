@@ -31,26 +31,6 @@
     <!-- Modernizr JS File -->
     <script src="js/modernizr.custom.js"></script>
 
-    <!--Sheets-->
-    <script
-		src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		crossorigin="anonymous"></script>
-	<script>
-		function SubForm (){
-			$.ajax({
-				url:"https://api.apispreadsheets.com/data/12269/",
-				type:"post",
-				data:$("#myForm").serializeArray(),
-				success: function(){
-					alert("Form Data Submitted :)")
-				},
-				error: function(){
-					alert("There was an error :(")
-				}
-			});
-		}
-	</script>
 </head>
 
 <body class="contact">
@@ -175,29 +155,30 @@
                 </ul>
             </div>
             <div class="col-12 col-lg-8">
-                <form id="contactform myForm" class="contactform" method="post" name="google-sheet">
+                <!--<form id="contactform myForm" class="" name="">-->
                     <div class="contactform">
                         <div class="row">
                             <div class="col-12 col-md-4">
-                                <input type="text" name="Name" placeholder="YOUR NAME" value="" required=""/>
+                                <input type="text" name="Name" placeholder="YOUR NAME" value="" required id="dev_name" />
                             </div>
                             <div class="col-12 col-md-4">
-                                <input type="email" name="Email" placeholder="YOUR EMAIL" value="" required=""/>
+                                <input type="email" name="Email" placeholder="YOUR EMAIL" value="" required id="dev_email"/>
                             </div>
                             <div class="col-12">
-                                <textarea name="Phone" placeholder="YOUR MESSAGE" value="" required=""></textarea>
-                                <button type="submit" onclick="SubForm()" name="submit" value="Login" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>   
+                                <textarea name="Phone" placeholder="YOUR MESSAGE" value="" required id="dev_message"></textarea>
+                                <button type="submit" onclick="sendMessage()" name="submit" value="Login" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>   
                             </div>
                             <div class="col-12 form-message">
                                 <span id="ppp" class="output_message text-center font-weight-600 text-uppercase"></span>
                             </div>  
                         </div>
                     </div>
-                </form>
+                <!--</form>-->
             </div>
         </div>
     </div>
 </section>
+<script src="js/integrateBack.js"></script>
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/styleswitcher.js"></script>
 <script src="js/preloader.min.js"></script>

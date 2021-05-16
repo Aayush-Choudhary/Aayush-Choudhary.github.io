@@ -42,7 +42,7 @@ const profileBg = document.querySelector('#bgImg');
 		if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
 			a.disabled = true;
 			if(a.getAttribute("title") == title) { a.disabled = false; 
-				profileBg.style.backgroundImage = `url(../img/styleswitcher/${title}.png)`;
+				profileBg.style.backgroundImage = `url(../img/styleswitcher/profile-${title}.png)`;
 			}
 		}
 	}

@@ -1,5 +1,7 @@
 /**	STYLE SWITCHER
 *************************************************** **/
+
+
 jQuery(document).ready(function() {
 	"use strict";
 
@@ -33,13 +35,18 @@ jQuery(document).ready(function() {
 });
 
 function setActiveStyleSheet(title) {
+ 	const switcher = document.querySelector('#switcher');
+const profileBg = document.querySelector('#bgImg');
 	var i, a, main;
 	for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
 		if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
 			a.disabled = true;
-			if(a.getAttribute("title") == title) { a.disabled = false; }
+			if(a.getAttribute("title") == title) { a.disabled = false; 
+				profileBg.style.backgroundImage = `url(../img/styleswitcher/${title}.png)`;
+			}
 		}
 	}
+	
 
 	// DARK SKIN
 	var color_skin = readCookie('color_skin');

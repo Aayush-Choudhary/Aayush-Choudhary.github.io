@@ -41,8 +41,13 @@ const profileBg = document.querySelector('#bgImg');
 	for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
 		if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
 			a.disabled = true;
-			if(a.getAttribute("title") == title) { a.disabled = false; 
-				profileBg.style.backgroundImage = `url(../img/styleswitcher/profile-${title}.png)`;
+			try{
+				if(a.getAttribute("title") == title) { a.disabled = false; 
+					profileBg.style.backgroundImage = `url(../img/styleswitcher/profile-${title}.png)`;
+				}
+			}
+			catch{
+				
 			}
 		}
 	}

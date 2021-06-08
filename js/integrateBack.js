@@ -84,11 +84,6 @@ function sendMessage()
     {
         return
     }
-    // console.log(name, email, message);
-    // name = name.replace(' ' , "--");
-    // message = message.replace(' ', '--');
-    // link = "https://aayush-choudhary.herokuapp.com/api/message/" + name + "$$$" + email + "$$$" + message;
-    // console.log(link);
     var a = document.createElement('a'); 
     a.id = "sendMeMessage"
     a.href = encryptAndSend("LionArt", 3, name, email, message); 

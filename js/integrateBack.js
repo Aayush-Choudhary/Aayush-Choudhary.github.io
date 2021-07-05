@@ -86,7 +86,7 @@ function sendMessage()
     }
     var a = document.createElement('a'); 
     a.id = "sendMeMessage"
-    a.href = encryptAndSend("LionArt", 3, name, email, message); 
+    a.href = encryptAndSend("LionArt", 33, name, email, message); 
     document.body.appendChild(a); 
     $("#sendMeMessage")[0].click();
 }

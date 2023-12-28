@@ -1,4 +1,4 @@
-fetch('https://www.artstation.com/users/aayush_dgamer/projects.json?user_id=1552818&page=1&per_page=1')
+fetch('https://asia-south1-artstation-data-fetch.cloudfunctions.net/api/portfolio-data/aayush_dgamer/1552818')
 .then(response => response.json())
 .then(data => {
   console.log("Hey")

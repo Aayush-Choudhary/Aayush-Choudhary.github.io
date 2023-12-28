@@ -1,4 +1,4 @@
-(function($) {
+function customization($) {
 
 	"use strict";
 
@@ -139,4 +139,6 @@
 	});
 
 
-})(jQuery);
+}
+
+(customization($))(jQuery);

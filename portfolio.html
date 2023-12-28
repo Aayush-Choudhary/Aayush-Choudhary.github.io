@@ -27,7 +27,6 @@
     <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
     <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
     <script src="js/modernizr.custom.js"></script>
-    <script src="js/portfolio.js"></script>
 </head>
 
 <body class="portfolio">
@@ -183,23 +182,28 @@
             </ul>
         </section>
         <section class="slideshow">
-            <ul>
+            <ul id="portfolioDetailList">
                 <li>
                     <figure>
                         <figcaption>
                             <h3>Samurai Farmhouse</h3>
                             <div class="row open-sans-font">
                                 <div class="col-6 mb-2">
-                                    <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Samurai Farmhouse</span>
+                                    <i class="fa fa-file-text-o pr-2"></i>
+                                    <span class="project-label">Project </span>
+                                    : 
+                                    <span class="ft-wt-600 uppercase">Samurai Farmhouse</span>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="https://www.artstation.com/artwork/g8GkdQ" target="_blank">Samurai Farmhouse (Art Station)</a></span>
+                                    <i class="fa fa-external-link pr-2"></i>
+                                    <span class="project-label">Preview </span>: 
+                                    <span class="ft-wt-600 uppercase">
+                                        <a href="https://www.artstation.com/artwork/g8GkdQ" target="_blank">Samurai Farmhouse (Art Station)</a>
+                                    </span>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <!-- <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript, Bootstrap</span> -->
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <!-- <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Envato</span> -->
                                 </div>
                             </div>
                         </figcaption>
@@ -354,6 +358,8 @@
 </section>
 
 <script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/portfolioFallback.js"></script>
+<script src="js/portfolio.js"></script>
 <script src="js/styleswitcher.js"></script>
 <script src="js/preloader.min.js"></script>
 <script src="js/fm.revealator.jquery.min.js"></script>

@@ -1,0 +1,6 @@
+{
+  "name": "Aayush Choudhary Portfolio",
+  "description": "High-end personal portfolio website for Aayush Choudhary, a 3D Artist and Animator, featuring interactive 3D elements and scroll animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
